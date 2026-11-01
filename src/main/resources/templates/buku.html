@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Daftar Buku</title>
+</head>
+<body>
+    
+<h1>Daftar Buku</h1>
+
+
+
+<table border="1">
+    <tr><th>ID</th><th>Judul</th><th>Stok</th></tr>
+    <tr th:each="b : ${daftarBuku}">
+        <td th:text="${b.idBuku}">B001</td>
+        <td th:text="${b.judul}">Judul buku</td>
+        <td th:text="${b.stok}">0</td>
+    </tr>
+</table>
+
+
+<h2>
+<a th:href="@{/buku/tambah}"><h2>Tambah Buku</h2></a>
+<a th:href="@{/anggota}">Lihat Anggota</a>
+<a th:href="@{/pinjam}">Pinjam Buku</a>
+</body>
+</html>

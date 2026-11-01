@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    
+    <body>
+        <h1> Form Buku</h1>
+        <form th:action="@{/buku}" method="post">
+            <table>
+                <tr><td>Id</td><td>:</td><td><input name="idBuku" placeholder="ID" required></td></tr>
+                <tr><td>Judul</td><td>:</td><td><input name="judul" placeholder="Judul" required></td></tr>
+                <tr><td>Stok</td><td>:</td><td><input name="stok" type="number" min="0" value="1"></td></tr>
+                <tr><td><button type="cancel">Batal</button></td><td></td><td><button type="submit">Simpan</button></td></tr>
+                
+            </table>
+            
+           
+            
+            
+        </form>
+    </body>
+</html>
